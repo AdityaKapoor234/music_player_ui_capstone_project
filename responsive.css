@@ -1,0 +1,87 @@
+@media (max-width: 991.5px) {
+    header {
+        flex-wrap: wrap;
+    }
+    
+    main {
+        position: relative;
+    }
+
+    main>div {
+        width: 100%;
+    }
+
+    aside {
+        position: absolute;
+        right: 0%;
+        background-image: url("background-image1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        width: 36%;
+    }
+
+    main>label {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: -4%;
+        right: 0px;
+    }
+
+    input[id="showAside"]:checked ~ aside {
+        display: block;
+        z-index: 100;
+	}
+}
+
+@media (max-width: 767.5px) {
+    .latestReleaseBox {
+        height: auto;
+        width: 97%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 7px 5px;
+        margin: 10px 0px;
+        box-sizing: border-box;
+        transition: all ease-in-out 0.4s;
+    }
+
+    .playlist-music-info-box-image {
+        width: 97%;
+    }
+    
+    .playlist-music-info-box-description {
+        width: 97%;
+    }
+
+    .playlist-music-info-box-description-button-row {
+        justify-content: space-between;
+    }    
+    
+    .playlist-music-info-box-description-button1 {
+        padding: 7px 30px;
+    }
+    
+    .playlist-music-info-box-description-button2 {
+        padding: 7px 30px;
+    }
+    
+    .songRowImg {
+        width: 40%;
+    }
+    
+    aside {
+        position: absolute;
+        right: 0%;
+        background-image: url("background-image1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        width: 70%;
+    }
+}
